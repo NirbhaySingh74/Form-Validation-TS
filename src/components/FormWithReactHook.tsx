@@ -14,6 +14,7 @@ const FormWithReactHook = () => {
   const onSubmit = async (data: TsignUpSchema) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(data);
+    console.log("form submitted");
 
     reset();
   };
